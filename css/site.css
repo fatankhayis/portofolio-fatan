@@ -1,0 +1,64 @@
+/* Custom site overrides */
+
+/* Projects title large pill-style header */
+.projects .section-title-wrap {
+  background: var(--secondary-color, #14B789);
+  padding: 2.5rem 1.5rem;
+  border-radius: 12px;
+  margin: 0 0 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .section-title-wrap h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Make project card images uniform */
+.projects .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Add spacing around projects area to match reference */
+.projects.section-padding {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 767px) {
+  .projects .section-title-wrap h2 {
+    font-size: 32px;
+  }
+  .projects .card-img-top {
+    height: 180px;
+  }
+}
+
+/* Skills section tweaks */
+.services .progress {
+  height: 12px;
+}
+.services .progress-bar {
+  border-radius: 6px;
+}
+.services .badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.7rem;
+}
+
+/* Range input full width */
+.skill-range {
+  width: 100%;
+}
+
+/* Small tweak to progress label */
+.skill-percent {
+  color: #333;
+  font-weight: 600;
+}
